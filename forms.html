@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #FEF4FF;
+        }
+        form
+        {
+            background-color: #C1BBDD;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset style="width: fit-content">
+            <legend align="center">LOGIN FORM</legend><br>
+            Name : <input type="text" name="uname" placeholder="Enter user name" autofocus><br/><br>
+            Email : <input type="email" name="eid" placeholder="Enter your email"><br/><br>
+            <label>Username : <input type="text"></label><br><br>
+            Password : <input type="password" name="pwd" minlength="6" maxlength="10" required><br/><br>
+            Gender : <input type="radio" name="gen"> Male <input type="radio" name="gen" checked> Female <br><br>
+            City : <input type="checkbox" name="c1" value="ahm"> Ahmedabad <input type="checkbox" name="c1" value="gnr"> Gandhinagar <input type="checkbox" name="c1" value="srt"> Surat <br><br>
+            Birthdate : <input type="date" name="dob"><br><br>
+            Colour : <input type="color" name="col"><br><br>
+            Range : <input type="range" min="0" max="200" value="20"><br><br>
+            Searchbar : <input type="search"><br><br>
+            Browser : <input list="browsers" name="browser"><br><br>
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="ChromeOne"></option>
+                <option value="FireFox"></option>
+            </datalist>
+            Number1 : <input type="number" name="num1" min="0" max="100" step="5"><br><br>
+            Number2 : <input type="tel" name="num2" minlength="10" maxlength="10"><br><br>
+            Attach CV : <input type="file" name="f1" accept=".jpg,.png" multiple><br><br>
+            Comment : <textarea cols="30" rows="5"></textarea><br><br>
+            <input type="submit"> <input type="reset">
+        </fieldset>
+        
+    </form>
+</body>
+</html>
