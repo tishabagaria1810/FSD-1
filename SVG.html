@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <svg height="500" width="500" style="border: 1px solid blue;">
+        <polygon points="0,250,250,0,500,250,250,500" stroke="#00008B" fill="#00008B" fill-rule="nonzero"/>
+        <rect x="100" y="100" height="300" width="300" stroke="blue" fill="pink"/>
+        <line x1="100" y1="100" x2="400" y2="400" stroke="blue" stroke-width="5"/>
+        <line x1="400" y1="100" x2="100" y2="400" stroke="blue" stroke-width="5"/>
+        <rect x="50" y="145" height="210" width="400" stroke="green" fill="limegreen"/>
+        <circle cx="250" cy="250" r="150" stroke="blue" stroke-width="2" fill="cyan"/>
+        <ellipse cx="250" cy="250" rx="150" ry="50" stroke="#006400" fill="#006400"/>
+        <text x="207" y="260" fill="white" font-size="25px" font-family="verdana">TISHA</text>
+    </svg>
+</body>
+</html>
